@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script defer src="javascript/java.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-[url('../img/fondo-espacio.png')] bg-cover ">
+        <section id="contenedor-principal" class="p-4">
+            <div id="contenedor-monedas" class="hidden justify-around gap-2 w-[200px] bg-black p-2 rounded-3xl border-[3px] border-red-500 absolute left-[85%]">
+                <p id="p" class="text-white font-mono">Monedas: 0</p>
+                <img class="w-[30px] animate-bounce" src="img/gif.gif" alt="">
+            </div>
+            <button id="boton" class="border-2 border-black bg-red-500 text-white text-base rounded-3xl hover:bg-red-600 hover:scale-125 absolute top-[45%] left-[47%] font-mono animate_animated animateheartBeat animate_infinite"><img class="w-[130px]" src="img/btn.png" alt=""></button>
+
+
+            <div id="contenedor-planetas" class="hidden gap-6 absolute top-[80%] left-[36.5%] bg-black p-3 rounded-3xl">
+                <div class="flex justify-center items-center" id="div-planeta1">
+                    <img class="w-[50px] opacity-20" src="img/universo1/planeta1.1.png" alt="" id="planeta1">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta2">
+                    <img class="w-[50px] opacity-20" src="img/universo1/planeta2.2.png" alt="" id="planeta2">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta3">
+                    <img class="w-[50px] opacity-20" src="img/universo1/planeta3.3.png" alt="" id="planeta3">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta4">
+                    <img class="w-[50px] opacity-20" src="img/universo1/planeta4.4.png" alt="" id="planeta4">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta5">
+                    <img class="w-[50px] opacity-20" src="img/universo1/planeta5.5.png" alt="" id="planeta5">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta6">
+                    <img class="w-[50px] opacity-20" src="img/universo1/planeta6.6.png" alt="" id="planeta6">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta7">
+                    <img class="w-[50px] opacity-20" src="img/universo1/planeta7.7.png" alt="" id="planeta7">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta8">
+                    <img class="w-[50px] opacity-20" src="img/universo1/planeta8.8.png" alt="" id="planeta8">
+                </div>
+            </div>
+            <div id="contenedor-planetas2" class="hidden gap-6 absolute top-[79%] left-[41%] bg-black p-3 rounded-3xl">
+                <div class="flex justify-center items-center" id="div-planeta1">
+                    <img class="w-[60px] opacity-20" src="img/universo2/planetaU2.1.1.png" alt="" id="planetaU1">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta2">
+                    <img class="w-[60px] opacity-20" src="img/universo2/planetaU2.2.2.png" alt="" id="planetaU2">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta3">
+                    <img class="w-[60px] opacity-20" src="img/universo2/planetaU2.3.3.png" alt="" id="planetaU3">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta4">
+                    <img class="w-[60px] opacity-20" src="img/universo2/planetaU2.4.4.png" alt="" id="planetaU4">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta5">
+                    <img class="w-[60px] opacity-20" src="img/universo2/planetaU2.5.5.png" alt="" id="planetaU5">
+                </div>
+            </div>
+            <div id="contenedor-planetas3" class="hidden gap-6 absolute top-[79%] left-[39.6%] bg-black p-3 rounded-3xl">
+                <div class="flex justify-center items-center" id="div-planeta13">
+                    <img class="w-[60px] opacity-20" src="img/universo3/planetaU3.1.1.png" alt="" id="planetaU3.1">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta14">
+                    <img class="w-[60px] opacity-20" src="img/universo3/planetaU3.2.2.png" alt="" id="planetaU3.2">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta15">
+                    <img class="w-[60px] opacity-20" src="img/universo3/planetaU3.3.3.png" alt="" id="planetaU3.3">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta16">
+                    <img class="w-[60px] opacity-20" src="img/universo3/planetaU3.4.4.png" alt="" id="planetaU3.4">
+                </div>
+                <div class="flex justify-center items-center" id="div-planeta17">
+                    <img class="w-[60px] opacity-20" src="img/universo3/planetaU3.5.5.png" alt="" id="planetaU3.5">
+                </div>
+            </div>
+
+
+            <div id="parrafo-desbloqueado" class="hidden absolute top-[72%] left-[42%] border-2 bg-black border-green-500 p-4 rounded-3xl text-lg">
+                <p class="text-white font-mono">!Has desbloqueado un <span class="text-red-500">Nuevo Planeta</span>!</p>
+            </div>
+
+            <div id="flecha" class="hidden absolute top-[90%] left-[37%]">
+                <img class="w-[40px] animate-bounce" src="img/flecha.svg" alt="" id="flecha">
+            </div>
+
+            <div id="logros" class="flex flex-col absolute top-[5%] left-[3%] gap-6"> 
+                <p id="p2" class="hidden text-white font-mono border-2 bg-black border-green-500 p-4 rounded-3xl text-center w-[200px]"><span class="text-blue-500 text-xl">D</span>estructor de <span class="text-blue-500 text-xl">E</span>strellas</p>
+                <p id="p3" class="hidden text-white font-mono border-2 bg-black border-green-500 p-4 rounded-3xl text-center w-[200px]"><span class="text-blue-500 text-xl">C</span>onquistador de <span class="text-blue-500 text-xl">M</span>undos</p>
+                <p id="p4" class="hidden text-white font-mono border-2 bg-black border-green-500 p-4 rounded-3xl text-center w-[200px]"><span class="text-blue-500 text-xl">R</span>ecoletor de <span class="text-blue-500 text-xl">M</span>onedas</p>
+                <p id="p5" class="hidden text-white font-mono border-2 bg-black border-green-500 p-4 rounded-3xl text-center w-[200px]"><span class="text-blue-500 text-xl">E</span>xterminador de <span class="text-blue-500 text-xl">O</span>VNIS</p>
+            </div>
+
+            <div id="parrafo-desbloqueado2" class="hidden absolute top-[25%] left-[15%] border-2 border-blue-500 p-4 rounded-3xl text-lg text-center">
+                <p class="text-white font-mono">!Has desbloqueado <br> un <span class="text-red-500">Nuevo Logro</span>!</p>
+            </div>
+
+            <div id="Nivel" class="hidden absolute top-[88%] left-[94.8%] border-2 bg-black border-green-500 p-4 rounded-3xl text-lg text-center">
+                <p id="level" class="text-white font-mono text-[50px]">1</p>
+                <p class="text-white font-mono">Level</p>
+            </div>
+            <div id="botonLevel">
+                <p id="parrafolevel" class="hidden absolute top-[10%] left-[80%] text-white font-mono text-[20px]">!Necesitas <span class="text-red-500"> al menos 150 monedas</span> para el siguiente nivel!</p>
+                <button id="siguienteNivel" class="hidden absolute top-[82%] left-[94%] border-2 border-black bg-red-500 text-white text-base rounded-3xl hover:bg-red-600 p-2"><p class="font-mono text-[11px]">Siguiente Nivel</p></button>
+                <button id="siguienteNivel2" class="hidden absolute top-[82%] left-[94%] border-2 border-black bg-red-500 text-white text-base rounded-3xl hover:bg-red-600 p-2"><p class="font-mono text-[11px]">Siguiente Nivel</p></button>
+            </div>
+            <div id="aparecerBotonPlaneta" class="hidden absolute cursor-pointer top-[90%] left-[89%] border-2 border-black bg-red-500 text-white text-center rounded-3xl hover:bg-red-600 p-2 w-[100px]">
+                <p class="font-mono text-[11px]">!Desbloquear<br> Planeta!</p>
+            </div>
+        </section>
+
+    </body>
+</html>
